@@ -78,8 +78,6 @@ export default function Page() {
                 period={`${education.start} - ${education.end}`}
                 description={education.degree}
               />
-
-               
             </BlurFade>
           ))}
         </div>
@@ -88,12 +86,65 @@ export default function Page() {
       <section id="skills">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 9}>
-            <h2 className="text-xl font-bold">Skills</h2>
+            <h2 className="text-xl font-bold">Programming Languages</h2>
           </BlurFade>
           <div className="flex flex-wrap gap-1">
             {DATA.skills.map((skill, id) => (
               <BlurFade key={skill} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
                 <Badge key={skill}>{skill}</Badge>
+              </BlurFade>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* mern */}
+
+      <section id="mern">
+        <div className="flex min-h-0 flex-col gap-y-3">
+          <BlurFade delay={BLUR_FADE_DELAY * 9}>
+            <h2 className="text-xl font-bold">MERN stack</h2>
+          </BlurFade>
+          <div className="flex flex-wrap gap-1">
+            {DATA.mern.map((mern, id) => (
+              <BlurFade key={mern} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
+                <Badge key={mern}>{mern}</Badge>
+              </BlurFade>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Blockchain */}
+      <section id="blockchain">
+        <div className="flex min-h-0 flex-col gap-y-3">
+          <BlurFade delay={BLUR_FADE_DELAY * 9}>
+            <h2 className="text-xl font-bold">Blockchain</h2>
+          </BlurFade>
+          <div className="flex flex-wrap gap-1">
+            {DATA.blockchain.map((blockchain, id) => (
+              <BlurFade
+                key={blockchain}
+                delay={BLUR_FADE_DELAY * 10 + id * 0.05}
+              >
+                <Badge key={blockchain}>{blockchain}</Badge>
+              </BlurFade>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Additional Skill */}
+
+      <section id="add">
+        <div className="flex min-h-0 flex-col gap-y-3">
+          <BlurFade delay={BLUR_FADE_DELAY * 9}>
+            <h2 className="text-xl font-bold">Additional Skills</h2>
+          </BlurFade>
+          <div className="flex flex-wrap gap-1">
+            {DATA.add.map((add, id) => (
+              <BlurFade key={add} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
+                <Badge key={add}>{add}</Badge>
               </BlurFade>
             ))}
           </div>

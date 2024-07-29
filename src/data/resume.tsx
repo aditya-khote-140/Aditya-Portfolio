@@ -15,13 +15,14 @@ export const DATA = {
     "C++",
     "Java",
     "JavaScript",
-
+  ],
+  mern: [
     "React.js",
     "Node.js",
     "Express.js",
     "MongoDB",
-    "Next.js",
-
+  ],
+  blockchain:[
     "Solidity",
     "Web3.js",
     "Truffle",
@@ -29,8 +30,10 @@ export const DATA = {
     "Hyperledger Fabic",
     "Ethereum",
     "Decentralized Applications",
-
+  ],
+  add:[
     "TypeScript",
+    "Next.js",
     "MySQL",
     "REST API",
     "GIT",
