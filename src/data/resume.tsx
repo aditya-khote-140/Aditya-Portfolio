@@ -10,19 +10,9 @@ export const DATA = {
   summary: "",
   avatarUrl: "/me.png",
 
-  skills: [
-    "C",
-    "C++",
-    "Java",
-    "JavaScript",
-  ],
-  mern: [
-    "React.js",
-    "Node.js",
-    "Express.js",
-    "MongoDB",
-  ],
-  blockchain:[
+  skills: ["C", "C++", "Java", "JavaScript"],
+  mern: ["React.js", "Node.js", "Express.js", "MongoDB"],
+  blockchain: [
     "Solidity",
     "Web3.js",
     "Truffle",
@@ -31,7 +21,7 @@ export const DATA = {
     "Ethereum",
     "Decentralized Applications",
   ],
-  add:[
+  add: [
     "TypeScript",
     "Next.js",
     "MySQL",
@@ -52,7 +42,7 @@ export const DATA = {
     tel: "+91 884082 3573",
     social: {
       GitHub: {
-        url: "https://github.com/adi1140",
+        url: "https://github.com/aditya-khote-140",
         icon: Icons.github,
       },
       LinkedIn: {
@@ -85,7 +75,7 @@ export const DATA = {
       school: "Maharan Pratap College of Professional Studies",
       // href: "https://buildspace.so",
       degree: "Bechlor of Computer Application",
-      description: "jdfsafklasfalks",
+      description: "a",
       logoUrl: "/MPGI.webp",
       start: "2023",
       end: "Present",
