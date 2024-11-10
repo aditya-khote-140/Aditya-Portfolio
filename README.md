@@ -1,47 +1,54 @@
-<div align="center">
-<img alt="Portfolio" src="https://github.com/dillionverma/portfolio/assets/16860528/57ffca81-3f0a-4425-b31d-094f61725455" width="90%">
-</div>
+# Aditya Khote's Portfolio
 
-# Portfolio [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdillionverma%2Fportfolio)
+Welcome to my personal portfolio! This website showcases my journey, projects, and skills as a developer with a focus on web development, blockchain, and full-stack technologies. Check it out to explore my work, achievements, and the tech stack I specialize in.
 
-Built with next.js, [shadcn/ui](https://ui.shadcn.com/), and [magic ui](https://magicui.design/), deployed on Vercel.
+## 🚀 Live Preview
+You can view my portfolio [here](https://aditya-khote-portfolio.vercel.app).
 
-# Features
+## 📝 About Me
+I'm Aditya Khote, a passionate and dedicated developer currently pursuing a Bachelor’s degree in Computer Applications (BCA). I have experience with a wide range of technologies, from frontend frameworks like React and Tailwind CSS to backend services with Node.js and Express. I also explore the fields of blockchain, real-time applications, and AI/ML integrations.
 
-- Setup only takes a few minutes by editing the [single config file](./src/data/resume.tsx)
-- Built using Next.js 14, React, Typescript, Shadcn/UI, TailwindCSS, Framer Motion, Magic UI
-- Includes a blog
-- Responsive for different devices
-- Optimized for Next.js and Vercel
+## 💼 Featured Projects
+Here are some of the key projects you'll find on my portfolio:
 
-# Getting Started Locally
+- **Real-Time Chat Application**: A React and Node.js-based chat app with real-time messaging, audio/video calling, and emoji support, powered by Socket.io and AWS.
+- **NFT Marketplace**: A blockchain-based marketplace where users can mint, buy, and trade NFTs, developed with Solidity and Hardhat on the Rinkeby testnet.
+- **Healthcare Services API**: A backend API for managing healthcare services built with Node.js, Express, and MongoDB.
+- **Health Tracking App**: A React and Node.js app to track health metrics like temperature, blood pressure, and heart rate with a MongoDB database.
 
-1. Clone this repository to your local machine:
+Each project section on my portfolio includes a description, technologies used, and a link to the code repository (if available).
 
-   ```bash
-   git clone https://github.com/dillionverma/portfolio
-   ```
+## 📌 Technologies & Tools
+Here's a quick overview of the tech stack and tools I use:
 
-2. Move to the cloned directory
+### Frontend
+- **Languages**: HTML, CSS, JavaScript, TypeScript
+- **Frameworks**: React, MUI, Tailwind CSS
+- **Other Tools**: Vite, Redux, Socket.io
 
-   ```bash
-   cd portfolio
-   ```
+### Backend
+- **Languages**: JavaScript, Solidity
+- **Frameworks**: Node.js, Express
+- **Blockchain**: Hardhat, OpenZeppelin
+- **Database**: MongoDB, AWS
 
-3. Install dependencies:
+### Other Tools
+- Git & GitHub, Postman, Vercel, Hardhat
 
-   ```bash
-   pnpm install
-   ```
+## 👨‍💻 Skills
+- **Frontend Development**: Responsive design, UI/UX, React component architecture
+- **Backend Development**: REST API design, Node.js, database management with MongoDB
+- **Blockchain Development**: Smart contract creation, NFT and tokenization applications, Solidity programming
+- **Problem Solving**: Data structures and algorithms, HackerRank challenges
 
-4. Start the local Server:
+## 📈 Achievements & Certifications
+- Full-Stack MERN certification
+- Blockchain Certification
+- Police Tag Fortification project in One Stack
 
-   ```bash
-   pnpm dev
-   ```
+## 🤝 Connect with Me
+I'm always open to networking and discussing new opportunities! Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/aditya-khote) or reach out via email at [aditya@example.com](mailto:aditya@example.com).
 
-5. Open the [Config file](./src/data/resume.tsx) and make changes
+---
 
-# License
-
-Licensed under the [MIT license](https://github.com/dillionverma/portfolio/blob/main/LICENSE.md).
+Thank you for visiting my portfolio! If you have any feedback or inquiries, feel free to get in touch. 😊
