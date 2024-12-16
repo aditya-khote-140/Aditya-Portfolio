@@ -124,7 +124,7 @@ export const DATA = {
       dates: "Soon....",
       active: true,
       description:
-        "A AI Blockchain Project....",
+        "Designed, developed and sold animated UI components for developers.",
       technologies: [
         "Next.js",
         "Typescript",

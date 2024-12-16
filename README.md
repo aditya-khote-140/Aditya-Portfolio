@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Aditya Khote's Portfolio
 
 Welcome to my personal portfolio! This website showcases my journey, projects, and skills as a developer with a focus on web development, blockchain, and full-stack technologies. Check it out to explore my work, achievements, and the tech stack I specialize in.
@@ -52,3 +53,6 @@ I'm always open to networking and discussing new opportunities! Feel free to con
 ---
 
 Thank you for visiting my portfolio! If you have any feedback or inquiries, feel free to get in touch. 😊
+=======
+ 
+>>>>>>> 43ad24df8a09360b13e84a2d49fe4e9dd6593837
