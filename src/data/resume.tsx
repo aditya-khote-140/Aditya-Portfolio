@@ -74,7 +74,7 @@ export const DATA = {
     {
       school: "Maharan Pratap College of Professional Studies",
       // href: "https://buildspace.so",
-      degree: "Bechlor of Computer Application",
+      degree: "Bachelor of Computer Application",
       description: "a",
       logoUrl: "/MPGI.webp",
       start: "2023",
