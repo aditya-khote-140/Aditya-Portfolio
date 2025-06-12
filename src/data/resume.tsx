@@ -113,6 +113,7 @@ export const DATA = {
       href: "#",
       dates: "Apr 2024 - Present",
       active: true,
+      category: ["Full Stack", "Cloud Computing"],
       description:
         "It's a Real time chat application to connect people to communicate with anyone's",
       technologies: [
@@ -137,10 +138,77 @@ export const DATA = {
         "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
     },
     {
+      title: "AI-Powered 3D Website Using React",
+      href: "#",
+      dates: "Soon....",
+      active: true,
+      category: ["Frontend"],
+      description:
+        "Designed, developed and sold animated UI components for developers.",
+      technologies: [
+        "Next.js",
+        "Typescript",
+        "PostgreSQL",
+        "Prisma",
+        "TailwindCSS",
+        "Stripe",
+        "Shadcn UI",
+        "Magic UI",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: " ",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "https://cdn.magicui.design/bento-grid.mp4",
+    },
+    {
       title: "Atharva",
       href: "#",
       dates: "Soon....",
       active: true,
+      category: ["Frontend", "Backend"],
+      description:
+        "Designed, developed and sold animated UI components for developers.",
+      technologies: [
+        "Next.js",
+        "Typescript",
+        "PostgreSQL",
+        "Prisma",
+        "TailwindCSS",
+        "Stripe",
+        "Shadcn UI",
+        "Magic UI",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: " ",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "https://cdn.magicui.design/bento-grid.mp4",
+    },
+    {
+      title: "Atharva",
+      href: "#",
+      dates: "Soon....",
+      active: true,
+      category: ["Frontend", "Backend"],
       description:
         "Designed, developed and sold animated UI components for developers.",
       technologies: [
@@ -172,20 +240,20 @@ export const DATA = {
   // Certificate
   certificates: [
     {
-      title: "Full Stack Web Development",
-      provider: "Coursera",
-      date: "March 2024",
-      url: "https://coursera.org/verify/fullstack123",
+      title: "MERN Stack Web Development",
+      provider: "VFX Era",
+      date: "Nov 2022 - August 2023",
+      url: "https://drive.google.com/file/d/1XxPd7TgFCk1Bqln14kYZ0Av9RLSAda7b/view?usp=share_link://coursera.org/verify/fullstack123",
       tags: ["React", "Node.js", "MongoDB", "Express.js"],
-      image: "/certificates/fullstack.jpg",
+      image: "/certificates/MERN.jpg",
     },
     {
-      title: "Blockchain Essentials",
-      provider: "Udemy",
-      date: "January 2024",
-      url: "https://udemy.com/certificate/blockchain001",
-      tags: ["Solidity", "Web3.js", "Ethereum"],
-      image: "/certificates/blockchain.jpg",
+      title: "GeekforGeeks",
+      provider: "GeeksforGeeks",
+      date: "Nov 2024 - May 2025",
+      url: "https://drive.google.com/file/d/1rfJNcbv8L21_dswG6Q80L8aREAspm7wN/view?usp=share_link",
+      tags: ["Data Structure and Algorithms", "Java"],
+      image: "/certificates/GFG-160.png",
     },
   ],
 } as const;

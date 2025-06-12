@@ -1,4 +1,6 @@
+"use client";
 import BlurFade from "@/components/magicui/blur-fade";
+import { useState } from "react";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { ProjectCard } from "@/components/project-card";
 import { ResumeCard } from "@/components/resume-card";
@@ -12,6 +14,25 @@ import { CertificateCard } from "@/components/CertificateCard";
 const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
+  const categories = [
+    "All",
+    "Frontend",
+    "Backend",
+    "Full Stack",
+    "Blockchain",
+    "Cloud Computing",
+    "DevOps",
+  ];
+
+  const [selectedCategory, setSelectedCategory] = useState("All");
+
+  const filteredProjects =
+    selectedCategory === "All"
+      ? DATA.projects
+      : DATA.projects.filter((project) =>
+          project.category?.includes(selectedCategory)
+        );
+
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10">
       <section id="hero">
@@ -39,6 +60,7 @@ export default function Page() {
           </div>
         </div>
       </section>
+
       {/* About */}
       <section id="about">
         <BlurFade delay={BLUR_FADE_DELAY * 3}>
@@ -59,6 +81,7 @@ export default function Page() {
           </a>
         </BlurFade>
       </section>
+
       {/* Education */}
       <section id="education">
         <div className="flex min-h-0 flex-col gap-y-3">
@@ -72,7 +95,6 @@ export default function Page() {
             >
               <ResumeCard
                 key={education.school}
-                // href={education.href}
                 logoUrl={education.logoUrl}
                 altText={education.school}
                 title={education.school}
@@ -83,6 +105,7 @@ export default function Page() {
           ))}
         </div>
       </section>
+
       {/* Work-Experience */}
       <section id="work">
         <div className="flex min-h-0 flex-col gap-y-3">
@@ -105,6 +128,7 @@ export default function Page() {
           ))}
         </div>
       </section>
+
       {/* Skills */}
       <section id="skills">
         <div className="flex min-h-0 flex-col gap-y-3">
@@ -122,7 +146,6 @@ export default function Page() {
       </section>
 
       {/* mern */}
-
       <section id="mern">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 9}>
@@ -158,7 +181,6 @@ export default function Page() {
       </section>
 
       {/* Additional Skill */}
-
       <section id="add">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 9}>
@@ -174,6 +196,7 @@ export default function Page() {
         </div>
       </section>
 
+      {/* Projects */}
       <section id="projects">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 11}>
@@ -186,35 +209,57 @@ export default function Page() {
                   Check out my latest work
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  I&apos;ve worked on a variety of projects, from simple
-                  websites to complex web applications. Here are a few of my
-                  favorites.
+                  I've worked on a variety of projects, from simple websites to
+                  complex web applications. Here are a few of my favorites.
                 </p>
+                {/* Project Filter Buttons */}
+                <div className="flex flex-wrap justify-center gap-2 mt-4">
+                  {categories.map((cat) => (
+                    <button
+                      key={cat}
+                      onClick={() => setSelectedCategory(cat)}
+                      className={`px-4 py-1.5 text-sm rounded-full border font-medium transition ${
+                        selectedCategory === cat
+                          ? "bg-black text-white"
+                          : "bg-white text-black hover:bg-gray-200"
+                      }`}
+                    >
+                      {cat}
+                    </button>
+                  ))}
+                </div>
               </div>
             </div>
           </BlurFade>
-          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
-            {DATA.projects.map((project, id) => (
-              <BlurFade
-                key={project.title}
-                delay={BLUR_FADE_DELAY * 12 + id * 0.05}
-              >
-                <ProjectCard
-                  href={project.href}
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto]">
+            {filteredProjects.length > 0 ? (
+              filteredProjects.map((project, id) => (
+                <BlurFade
                   key={project.title}
-                  title={project.title}
-                  description={project.description}
-                  dates={project.dates}
-                  tags={project.technologies}
-                  image={project.image}
-                  video={project.video}
-                  links={project.links}
-                />
-              </BlurFade>
-            ))}
+                  delay={BLUR_FADE_DELAY * 12 + id * 0.05}
+                >
+                  <ProjectCard
+                    href={project.href}
+                    key={project.title}
+                    title={project.title}
+                    description={project.description}
+                    dates={project.dates}
+                    tags={project.technologies}
+                    image={project.image}
+                    video={project.video}
+                    links={project.links}
+                  />
+                </BlurFade>
+              ))
+            ) : (
+              <p className="text-center text-muted-foreground w-full col-span-full">
+                Projects coming soon.
+              </p>
+            )}
           </div>
         </div>
       </section>
+
       {/* Certificate */}
       <section id="certificates">
         <div className="space-y-12 w-full py-12">
@@ -246,6 +291,7 @@ export default function Page() {
           </div>
         </div>
       </section>
+
       {/* Contact */}
       <section id="contact">
         <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
@@ -265,8 +311,7 @@ export default function Page() {
                 >
                   with a direct question on twitter
                 </Link>{" "}
-                and I&apos;ll respond whenever I can. I will ignore all
-                soliciting.
+                and I'll respond whenever I can. I will ignore all soliciting.
               </p>
             </div>
           </BlurFade>

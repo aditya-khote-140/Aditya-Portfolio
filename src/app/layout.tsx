@@ -19,6 +19,9 @@ export const metadata: Metadata = {
     template: `%s | ${DATA.name}`,
   },
   description: DATA.description,
+  icons: {
+    icon: "/app/favicon.ico"// 👈 This line adds your favicon
+  },
   openGraph: {
     title: `${DATA.name}`,
     description: DATA.description,
