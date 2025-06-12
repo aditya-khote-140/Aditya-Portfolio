@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
+import { CertificateCard } from "@/components/CertificateCard";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -38,7 +39,7 @@ export default function Page() {
           </div>
         </div>
       </section>
-
+      {/* About */}
       <section id="about">
         <BlurFade delay={BLUR_FADE_DELAY * 3}>
           <h2 className="text-xl font-bold">About</h2>
@@ -58,7 +59,7 @@ export default function Page() {
           </a>
         </BlurFade>
       </section>
-
+      {/* Education */}
       <section id="education">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 7}>
@@ -82,7 +83,29 @@ export default function Page() {
           ))}
         </div>
       </section>
-
+      {/* Work-Experience */}
+      <section id="work">
+        <div className="flex min-h-0 flex-col gap-y-3">
+          <BlurFade delay={BLUR_FADE_DELAY * 9}>
+            <h2 className="text-xl font-bold">Work Experience</h2>
+          </BlurFade>
+          {DATA.work.map((job, id) => (
+            <BlurFade
+              key={job.company}
+              delay={BLUR_FADE_DELAY * 10 + id * 0.05}
+            >
+              <ResumeCard
+                logoUrl={job.logoUrl}
+                altText={job.company}
+                title={`${job.title} @ ${job.company}`}
+                period={`${job.start} - ${job.end}`}
+                description={job.description}
+              />
+            </BlurFade>
+          ))}
+        </div>
+      </section>
+      {/* Skills */}
       <section id="skills">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 9}>
@@ -192,7 +215,38 @@ export default function Page() {
           </div>
         </div>
       </section>
+      {/* Certificate */}
+      <section id="certificates">
+        <div className="space-y-12 w-full py-12">
+          <BlurFade delay={BLUR_FADE_DELAY * 14}>
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2">
+                <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+                  Certificates
+                </div>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                  Courses & Certifications
+                </h2>
+                <p className="text-muted-foreground md:text-xl/relaxed">
+                  Here are some of the certifications I've completed recently.
+                </p>
+              </div>
+            </div>
+          </BlurFade>
 
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-[800px] mx-auto">
+            {DATA.certificates.map((cert, id) => (
+              <BlurFade
+                key={cert.title}
+                delay={BLUR_FADE_DELAY * 15 + id * 0.05}
+              >
+                <CertificateCard {...cert} />
+              </BlurFade>
+            ))}
+          </div>
+        </div>
+      </section>
+      {/* Contact */}
       <section id="contact">
         <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 16}>

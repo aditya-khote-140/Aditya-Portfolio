@@ -56,20 +56,6 @@ export const DATA = {
     },
   },
 
-  work: [
-    // {
-    //   company: "Atomic Finance",
-    //   href: "https://atomic.finance",
-    //   badges: [],
-    //   location: "Remote",
-    //   title: "Bitcoin Protocol Engineer",
-    //   logoUrl: "/atomic.png",
-    //   start: "May 2021",
-    //   end: "Oct 2022",
-    //   description:
-    //     "Implemented the Bitcoin discreet log contract (DLC) protocol specifications as an open source Typescript SDK. Dockerized all microservices and setup production kubernetes cluster. Architected a data lake using AWS S3 and Athena for historical backtesting of bitcoin trading strategies. Built a mobile app using react native and typescript.",
-    // },
-  ],
   education: [
     {
       school: "Maharan Pratap College of Professional Studies",
@@ -87,6 +73,38 @@ export const DATA = {
       logoUrl: "/logo.png",
       start: "2020",
       end: "2021",
+    },
+  ],
+  work: [
+    // {
+    //   company: "Blockchain Intern — Prasunet Pvt. Ltd.",
+    //   href: "https://atomic.finance",
+    //   badges: [],
+    //   location: "Remote",
+    //   title: "Bitcoin Protocol Engineer",
+    //   logoUrl: "/atomic.png",
+    //   start: "May 2021",
+    //   end: "Oct 2022",
+    //   description:
+    //     "Implemented the Bitcoin discreet log contract (DLC) protocol specifications as an open source Typescript SDK. Dockerized all microservices and setup production kubernetes cluster. Architected a data lake using AWS S3 and Athena for historical backtesting of bitcoin trading strategies. Built a mobile app using react native and typescript.",
+    // },
+    {
+      company: "Prasunet Pvt. Ltd.",
+      href: "https://atomic.finance",
+      badges: [],
+      location: "Remote",
+      title: "Blockchain Intern",
+      // logoUrl: "/atomic.png",
+      start: "Mar 2025",
+      end: "May 2025",
+      description: (
+        <p>
+          Learned and worked on smart contracts using <strong>Solidity</strong>,{" "}
+          <strong>Web3.js</strong>, and <strong>Truffle</strong>. Gained
+          hands-on experience with real blockchain projects and improved
+          technical and teamwork skills.
+        </p>
+      ),
     },
   ],
   projects: [
@@ -149,6 +167,25 @@ export const DATA = {
       ],
       image: "",
       video: "https://cdn.magicui.design/bento-grid.mp4",
+    },
+  ],
+  // Certificate
+  certificates: [
+    {
+      title: "Full Stack Web Development",
+      provider: "Coursera",
+      date: "March 2024",
+      url: "https://coursera.org/verify/fullstack123",
+      tags: ["React", "Node.js", "MongoDB", "Express.js"],
+      image: "/certificates/fullstack.jpg",
+    },
+    {
+      title: "Blockchain Essentials",
+      provider: "Udemy",
+      date: "January 2024",
+      url: "https://udemy.com/certificate/blockchain001",
+      tags: ["Solidity", "Web3.js", "Ethereum"],
+      image: "/certificates/blockchain.jpg",
     },
   ],
 } as const;
