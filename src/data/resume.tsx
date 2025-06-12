@@ -76,18 +76,6 @@ export const DATA = {
     },
   ],
   work: [
-    // {
-    //   company: "Blockchain Intern — Prasunet Pvt. Ltd.",
-    //   href: "https://atomic.finance",
-    //   badges: [],
-    //   location: "Remote",
-    //   title: "Bitcoin Protocol Engineer",
-    //   logoUrl: "/atomic.png",
-    //   start: "May 2021",
-    //   end: "Oct 2022",
-    //   description:
-    //     "Implemented the Bitcoin discreet log contract (DLC) protocol specifications as an open source Typescript SDK. Dockerized all microservices and setup production kubernetes cluster. Architected a data lake using AWS S3 and Athena for historical backtesting of bitcoin trading strategies. Built a mobile app using react native and typescript.",
-    // },
     {
       company: "Prasunet Pvt. Ltd.",
       href: "https://atomic.finance",
@@ -106,6 +94,24 @@ export const DATA = {
         </p>
       ),
     },
+    // {
+    //   company: "Blockchain Intern — Prasunet Pvt. Ltd.",
+    //   href: "https://atomic.finance",
+    //   badges: [],
+    //   location: "Remote",
+    //   title: "Bitcoin Protocol Engineer",
+    //   logoUrl: "/atomic.png",
+    //   start: "May 2021",
+    //   end: "Oct 2022",
+    //   description: (
+    //     <p>
+    //       Learned and worked on smart contracts using <strong>Solidity</strong>,{" "}
+    //       <strong>Web3.js</strong>, and <strong>Truffle</strong>. Gained
+    //       hands-on experience with real blockchain projects and improved
+    //       technical and teamwork skills.
+    //     </p>
+    //   ),
+    // },
   ],
   projects: [
     {
@@ -113,7 +119,7 @@ export const DATA = {
       href: "#",
       dates: "Apr 2024 - Present",
       active: true,
-      category: ["Full Stack", "Cloud Computing"],
+      category: ["Full Stack"],
       description:
         "It's a Real time chat application to connect people to communicate with anyone's",
       technologies: [
@@ -170,72 +176,72 @@ export const DATA = {
       image: "",
       video: "https://cdn.magicui.design/bento-grid.mp4",
     },
-    {
-      title: "Atharva",
-      href: "#",
-      dates: "Soon....",
-      active: true,
-      category: ["Frontend", "Backend"],
-      description:
-        "Designed, developed and sold animated UI components for developers.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: " ",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "https://cdn.magicui.design/bento-grid.mp4",
-    },
-    {
-      title: "Atharva",
-      href: "#",
-      dates: "Soon....",
-      active: true,
-      category: ["Frontend", "Backend"],
-      description:
-        "Designed, developed and sold animated UI components for developers.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: " ",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "https://cdn.magicui.design/bento-grid.mp4",
-    },
+    // {
+    //   title: "Atharva",
+    //   href: "#",
+    //   dates: "Soon....",
+    //   active: true,
+    //   category: ["Frontend", "Backend"],
+    //   description:
+    //     "Designed, developed and sold animated UI components for developers.",
+    //   technologies: [
+    //     "Next.js",
+    //     "Typescript",
+    //     "PostgreSQL",
+    //     "Prisma",
+    //     "TailwindCSS",
+    //     "Stripe",
+    //     "Shadcn UI",
+    //     "Magic UI",
+    //   ],
+    //   links: [
+    //     {
+    //       type: "Website",
+    //       href: " ",
+    //       icon: <Icons.globe className="size-3" />,
+    //     },
+    //     {
+    //       type: "Source",
+    //       href: "",
+    //       icon: <Icons.github className="size-3" />,
+    //     },
+    //   ],
+    //   image: "",
+    //   video: "https://cdn.magicui.design/bento-grid.mp4",
+    // },
+    // {
+    //   title: "Atharva",
+    //   href: "#",
+    //   dates: "Soon....",
+    //   active: true,
+    //   category: ["Frontend", "Backend"],
+    //   description:
+    //     "Designed, developed and sold animated UI components for developers.",
+    //   technologies: [
+    //     "Next.js",
+    //     "Typescript",
+    //     "PostgreSQL",
+    //     "Prisma",
+    //     "TailwindCSS",
+    //     "Stripe",
+    //     "Shadcn UI",
+    //     "Magic UI",
+    //   ],
+    //   links: [
+    //     {
+    //       type: "Website",
+    //       href: " ",
+    //       icon: <Icons.globe className="size-3" />,
+    //     },
+    //     {
+    //       type: "Source",
+    //       href: "",
+    //       icon: <Icons.github className="size-3" />,
+    //     },
+    //   ],
+    //   image: "",
+    //   video: "https://cdn.magicui.design/bento-grid.mp4",
+    // },
   ],
   // Certificate
   certificates: [
