@@ -53,6 +53,3 @@ I'm always open to networking and discussing new opportunities! Feel free to con
 ---
 
 Thank you for visiting my portfolio! If you have any feedback or inquiries, feel free to get in touch. 😊
-=======
- 
->>>>>>> 43ad24df8a09360b13e84a2d49fe4e9dd6593837
