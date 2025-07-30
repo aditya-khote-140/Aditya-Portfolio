@@ -29,8 +29,10 @@ export default function Page() {
   const filteredProjects =
     selectedCategory === "All"
       ? DATA.projects
-      : DATA.projects.filter((project) =>
-          project.category?.includes(selectedCategory)
+      : DATA.projects.filter(
+          (project) =>
+            typeof project.category === "string" &&
+            project.category.includes(selectedCategory)
         );
 
   return (
@@ -274,7 +276,8 @@ export default function Page() {
                   Courses & Certifications
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed">
-                  Here are some of the certifications I&apos;ve completed recently.
+                  Here are some of the certifications I&apos;ve completed
+                  recently.
                 </p>
               </div>
             </div>
