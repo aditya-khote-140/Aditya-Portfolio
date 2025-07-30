@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
   description: DATA.description,
   icons: {
-    icon: "/app/favicon.ico"// 👈 This line adds your favicon
+    icon: "/public/favicon.ico"// This line adds your favicon
   },
   openGraph: {
     title: `${DATA.name}`,

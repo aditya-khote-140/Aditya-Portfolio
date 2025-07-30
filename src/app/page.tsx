@@ -20,7 +20,7 @@ export default function Page() {
     "Backend",
     "Full Stack",
     "Blockchain",
-    "Cloud Computing",
+    "CloudComputing",
     "DevOps",
   ];
 

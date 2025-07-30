@@ -6,12 +6,12 @@ export const DATA = {
   url: "https://charcha.us",
   location: "Kanpur, India",
   description:
-    "Motivated MERN stack developer and Blockchain enthusiast with strong DSA skills, seeking an entry-level role to contribute to innovative projects and expand expertise.",
+  "Full-stack developer skilled in MERN, Web3, DevOps, Cloud, and DSA—building scalable apps and smart contracts with modern infrastructure.",
   summary: "",
   avatarUrl: "/me.png",
 
   skills: ["C", "C++", "Java", "JavaScript"],
-  mern: ["React.js", "Node.js", "Express.js", "MongoDB"],
+  mern: ["MongoDB", "Express.js", "React.js", "Node.js"],
   blockchain: [
     "Solidity",
     "Web3.js",
@@ -22,23 +22,11 @@ export const DATA = {
     "Decentralized Applications",
   ],
   add: [
-    "TypeScript",
-    "Next.js",
-    "MySQL",
-    "REST API",
-    "GIT",
-    "GitHub",
-    "Socket.io",
-    "MUI",
-    "Redux toolkit",
-    "AWS",
-    "Docker",
-    "jQuery",
-    "Bootstrap",
+    "TypeScript", "Next.js", "MySQL", "REST API","GIT","GitHub","Socket.io","Redux toolkit","AWS","Docker","Kubernetes","PostgreSQL",
   ],
 
   contact: {
-    email: "adityakumar29275@gmail.com",
+    email: "21csme004aditya@gmail.com",
     tel: "+91 884082 3573",
     social: {
       GitHub: {
@@ -113,11 +101,13 @@ export const DATA = {
     //   ),
     // },
   ],
+
+  // Project Section :
   projects: [
     {
       title: "Charcha.us",
       href: "#",
-      dates: "Apr 2024 - Present",
+      dates: "Apr 2024 - Present - Work Still ongoing",
       active: true,
       category: ["Full Stack"],
       description:
@@ -144,22 +134,18 @@ export const DATA = {
         "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
     },
     {
-      title: "AI-Powered 3D Website Using React",
+      title: "Digital Menu With Admin Dashboard",
       href: "#",
-      dates: "Soon....",
+      dates: "10 Jul 2025",
       active: true,
-      category: ["Frontend"],
+      category: ["Full Stack"],
       description:
-        "Designed, developed and sold animated UI components for developers.",
+        "A digital menu application with an admin dashboard for restaurant management, allowing users to view food items, and admins to manage the menu perform CRUD in menu.",
       technologies: [
-        "Next.js",
+        "React.js",
         "Typescript",
-        "PostgreSQL",
-        "Prisma",
         "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
+        "Supabase",
       ],
       links: [
         {
@@ -176,72 +162,202 @@ export const DATA = {
       image: "",
       video: "https://cdn.magicui.design/bento-grid.mp4",
     },
-    // {
-    //   title: "Atharva",
-    //   href: "#",
-    //   dates: "Soon....",
-    //   active: true,
-    //   category: ["Frontend", "Backend"],
-    //   description:
-    //     "Designed, developed and sold animated UI components for developers.",
-    //   technologies: [
-    //     "Next.js",
-    //     "Typescript",
-    //     "PostgreSQL",
-    //     "Prisma",
-    //     "TailwindCSS",
-    //     "Stripe",
-    //     "Shadcn UI",
-    //     "Magic UI",
-    //   ],
-    //   links: [
-    //     {
-    //       type: "Website",
-    //       href: " ",
-    //       icon: <Icons.globe className="size-3" />,
-    //     },
-    //     {
-    //       type: "Source",
-    //       href: "",
-    //       icon: <Icons.github className="size-3" />,
-    //     },
-    //   ],
-    //   image: "",
-    //   video: "https://cdn.magicui.design/bento-grid.mp4",
-    // },
-    // {
-    //   title: "Atharva",
-    //   href: "#",
-    //   dates: "Soon....",
-    //   active: true,
-    //   category: ["Frontend", "Backend"],
-    //   description:
-    //     "Designed, developed and sold animated UI components for developers.",
-    //   technologies: [
-    //     "Next.js",
-    //     "Typescript",
-    //     "PostgreSQL",
-    //     "Prisma",
-    //     "TailwindCSS",
-    //     "Stripe",
-    //     "Shadcn UI",
-    //     "Magic UI",
-    //   ],
-    //   links: [
-    //     {
-    //       type: "Website",
-    //       href: " ",
-    //       icon: <Icons.globe className="size-3" />,
-    //     },
-    //     {
-    //       type: "Source",
-    //       href: "",
-    //       icon: <Icons.github className="size-3" />,
-    //     },
-    //   ],
-    //   image: "",
-    //   video: "https://cdn.magicui.design/bento-grid.mp4",
-    // },
+    {
+      title: "Dropbox Clone with NEXT.JS 14",
+      href: "#",
+      dates: "Soon....",
+      active: true,
+      category: ["Backend"],
+      description:
+        "Dropbox Clone built using Next.js 14 with seamless file storage and sharing functionality.",
+      technologies: [
+        "Next.js",
+        "React",
+        "Clerk",
+        "Firebase",
+        "Drag/Drop",
+        "CRUD",
+        "Shadcn UI",
+        "Typescript",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: " ",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/image.png",
+      // video: "https://cdn.magicui.design/bento-grid.mp4",
+    },
+    {
+      title: "NFT marketplace web3.0",
+      href: "#",
+      dates: "Soon....",
+      active: true,
+      category: ["Blockchain"],
+      description:
+        "A decentralized application (DApp) that allows users to create, buy, and sell NFTs using the Ethereum blockchain.",
+      technologies: [
+        "Solidity",
+        "Web3.js",
+        "Smart Contract",
+        "Ethereum",
+        "DApp",
+        "API",
+        "React.js",
+        "MongoDB",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: " ",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "https://cdn.magicui.design/bento-grid.mp4",
+    },
+    {
+      title: "Web3.0 Health Care Management Dapp",
+      href: "#",
+      dates: "Soon....",
+      active: true,
+      category: ["Blockchain"],
+      description:
+        "Blockchain based health care management dapp that allows users to manage their health records and share them with their doctors. with Admin dashboard to manage the dapp.",
+      technologies: ["Next.js", "Solidity", "Hardhat", "Context API", "Dapp"],
+      links: [
+        {
+          type: "Website",
+          href: " ",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "https://cdn.magicui.design/bento-grid.mp4",
+    },
+    {
+      title: "SaaS ScrapeFlow",
+      href: "#",
+      dates: "Soon....",
+      active: true,
+      category: ["CloudComputing"],
+      description:
+        "Developed a B2C SaaS automation tool with workflow builder, real-time execution, third-party integrations (Google Drive, Slack, Notion), and credit-based Stripe billing, using React.js, Node.js, PostgreSQL, and TypeScript.",
+      technologies: [
+        "React.js",
+        "TypeScript",
+        "Node.js",
+        "Express.js",
+        "PostgreSQL",
+        "Prisma",
+        "Tailwind CSS",
+        "React Flow",
+        "Stripe API",
+        "OAuth 2.0",
+        "Socket.io",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: " ",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "https://cdn.magicui.design/bento-grid.mp4",
+    },
+    {
+      title: "SAAS Automation Builder",
+      href: "#",
+      dates: "Soon....",
+      active: true,
+      category: ["CloudComputing"],
+      description:
+        "Built a full-stack B2C SaaS automation platform with Google Drive, Slack, Discord, Notion, and Stripe integrations, featuring a drag-and-drop node builder, real-time workflows, credit-based billing, and a polished UI with Aceternity components.",
+      technologies: [
+        "React.js",
+        "TypeScript",
+        "Node.js",
+        "Express.js",
+        "PostgreSQL",
+        "Prisma",
+        "Tailwind CSS",
+        "React Flow",
+        "Stripe API",
+        "OAuth 2.0",
+        "Socket.io",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: " ",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "https://cdn.magicui.design/bento-grid.mp4",
+    },
+    {
+      title: "Ultimate CI/CD Corporate DevOps Pipeline",
+      href: "#",
+      dates: "Soon....",
+      active: true,
+      category: ["DevOps"],
+      description:
+        "Built a corporate DevOps pipeline with Kubernetes, Jenkins, Git, SonarQube, Nexus, and full-stack CI/CD with monitoring and security scanning.",
+      technologies: [
+        "Kubernetes",
+        "Jenkins",
+        "Git",
+        "SonarQube",
+        "Nexus",
+        "Prometheus",
+        "Grafana",
+        "Docker",
+        "Bash",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: " ",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "https://cdn.magicui.design/bento-grid.mp4",
+    },
   ],
   // Certificate
   certificates: [

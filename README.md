@@ -40,12 +40,11 @@ Here's a quick overview of the tech stack and tools I use:
 - **Frontend Development**: Responsive design, UI/UX, React component architecture
 - **Backend Development**: REST API design, Node.js, database management with MongoDB
 - **Blockchain Development**: Smart contract creation, NFT and tokenization applications, Solidity programming
-- **Problem Solving**: Data structures and algorithms, HackerRank challenges
+- **Problem Solving**: Data structures and algorithms, Geeksforgeek challenges
 
 ## 📈 Achievements & Certifications
 - Full-Stack MERN certification
 - Blockchain Certification
-- Police Tag Fortification project in One Stack
 
 ## 🤝 Connect with Me
 I'm always open to networking and discussing new opportunities! Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/aditya-khote) or reach out via email at [aditya@example.com](mailto:aditya@example.com).
