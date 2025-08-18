@@ -158,7 +158,7 @@ export const DATA = {
       href: "https://aditya-menu.vercel.app",
       dates: "10 Jul 2025",
       active: true,
-      category: ["Full Stack"],
+      category: ["Frontend"],
       description:
         "A digital menu application with an admin dashboard for restaurant management, allowing users to view food items, and admins to manage the menu perform CRUD in menu.",
       technologies: ["React.js", "Typescript", "TailwindCSS", "Supabase"],
