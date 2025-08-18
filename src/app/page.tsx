@@ -29,8 +29,9 @@ export default function Page() {
   const filteredProjects =
     selectedCategory === "All"
       ? DATA.projects
-      : DATA.projects.filter((project) =>
-          project.category?.includes(selectedCategory)
+      : DATA.projects.filter(
+          (project) =>
+            project.category && project.category.includes(selectedCategory)
         );
 
   return (
