@@ -10,7 +10,7 @@ import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
 import { CertificateCard } from "@/components/CertificateCard";
-
+import Image from "next/image";
 const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
@@ -29,10 +29,8 @@ export default function Page() {
   const filteredProjects =
     selectedCategory === "All"
       ? DATA.projects
-      : DATA.projects.filter(
-          (project) =>
-            typeof project.category === "string" &&
-            project.category.includes(selectedCategory)
+      : DATA.projects.filter((project) =>
+          project.category?.includes(selectedCategory)
         );
 
   return (
@@ -276,8 +274,8 @@ export default function Page() {
                   Courses & Certifications
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed">
-                  Here are some of the certifications I&apos;ve completed
-                  recently.
+                  Here are some of the certifications I&apos;ve
+                  completedrecently.
                 </p>
               </div>
             </div>
@@ -293,6 +291,52 @@ export default function Page() {
               </BlurFade>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Codolio */}
+
+      <section id="contact">
+        <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
+          <BlurFade delay={BLUR_FADE_DELAY * 18}>
+            <div className="space-y-3">
+              <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+                Codolio
+              </div>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                Codolio profile
+              </h2>
+              <p className="mt-4 text-lg text-gray-500">
+                <a
+                  href="https://codolio.com/profile/adityakhote"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-500 hover:underline"
+                >
+                  See my problem-solving stats, DSA breakdown, and achievements
+                </a>
+                . I&rsquo;ll be happy to collaborate or discuss exciting
+                projects. (Spam? I&rsquo;ll ignore it.)
+              </p>
+
+              {/* Image should NOT be inside <p> */}
+              <div className="flex justify-center mt-6">
+                <a
+                  href="https://codolio.com/profile/adityakhote"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src="/codolio.png"
+                    alt="Codolio Profile"
+                    width={600} // adjust as needed
+                    height={400} // adjust as needed
+                    className="rounded-lg shadow-lg cursor-pointer hover:opacity-80 transition"
+                  />
+                </a>
+              </div>
+            </div>
+          </BlurFade>
         </div>
       </section>
 

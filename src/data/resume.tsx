@@ -1,4 +1,5 @@
 import { Icons } from "@/components/icons";
+import { Target } from "lucide-react";
 
 export const DATA = {
   name: "Aditya Khote",
@@ -6,7 +7,7 @@ export const DATA = {
   url: "https://charcha.us",
   location: "Kanpur, India",
   description:
-  "Full-stack developer skilled in MERN, Web3, DevOps, Cloud, and DSA—building scalable apps and smart contracts with modern infrastructure.",
+    "Full-stack developer skilled in MERN, Web3, DevOps, Cloud, and DSA—building scalable apps and smart contracts with modern infrastructure.",
   summary: "",
   avatarUrl: "/me.png",
 
@@ -22,12 +23,23 @@ export const DATA = {
     "Decentralized Applications",
   ],
   add: [
-    "TypeScript", "Next.js", "MySQL", "REST API","GIT","GitHub","Socket.io","Redux toolkit","AWS","Docker","Kubernetes","PostgreSQL",
+    "TypeScript",
+    "Next.js",
+    "MySQL",
+    "REST API",
+    "GIT",
+    "GitHub",
+    "Socket.io",
+    "Redux toolkit",
+    "AWS",
+    "Docker",
+    "Kubernetes",
+    "PostgreSQL",
   ],
 
   contact: {
     email: "21csme004aditya@gmail.com",
-    tel: "+91 884082 3573",
+    tel: "+91 8840823573", // Removed extra space
     social: {
       GitHub: {
         url: "https://github.com/aditya-khote-140",
@@ -35,15 +47,23 @@ export const DATA = {
       },
       LinkedIn: {
         url: "https://www.linkedin.com/in/aditya-khote/",
+        target: "_blank",
         icon: Icons.linkedin,
       },
       X: {
         url: "https://x.com/adityak_140",
         icon: Icons.x,
       },
+      GFG: {
+        url: "https://www.geeksforgeeks.org/user/adi_1114/",
+        icon: Icons.GFG,
+      },
+      Leetcode: {
+        url: "https://leetcode.com/adityakhote/",
+        icon: Icons.leetcode,
+      },
     },
   },
-
   education: [
     {
       school: "Maharan Pratap College of Professional Studies",
@@ -135,22 +155,17 @@ export const DATA = {
     },
     {
       title: "Digital Menu With Admin Dashboard",
-      href: "#",
+      href: "https://aditya-menu.vercel.app",
       dates: "10 Jul 2025",
       active: true,
       category: ["Full Stack"],
       description:
         "A digital menu application with an admin dashboard for restaurant management, allowing users to view food items, and admins to manage the menu perform CRUD in menu.",
-      technologies: [
-        "React.js",
-        "Typescript",
-        "TailwindCSS",
-        "Supabase",
-      ],
+      technologies: ["React.js", "Typescript", "TailwindCSS", "Supabase"],
       links: [
         {
           type: "Website",
-          href: " ",
+          href: "https://aditya-menu.vercel.app",
           icon: <Icons.globe className="size-3" />,
         },
         {
@@ -228,30 +243,31 @@ export const DATA = {
       image: "",
       video: "https://cdn.magicui.design/bento-grid.mp4",
     },
-    {
-      title: "Web3.0 Health Care Management Dapp",
-      href: "#",
-      dates: "Soon....",
-      active: true,
-      category: ["Blockchain"],
-      description:
-        "Blockchain based health care management dapp that allows users to manage their health records and share them with their doctors. with Admin dashboard to manage the dapp.",
-      technologies: ["Next.js", "Solidity", "Hardhat", "Context API", "Dapp"],
-      links: [
-        {
-          type: "Website",
-          href: " ",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "https://cdn.magicui.design/bento-grid.mp4",
-    },
+
+    // {
+    //   title: "Web3.0 Health Care Management Dapp",
+    //   href: "#",
+    //   dates: "Soon....",
+    //   active: true,
+    //   category: ["Blockchain"],
+    //   description:
+    //     "Blockchain based health care management dapp that allows users to manage their health records and share them with their doctors. with Admin dashboard to manage the dapp.",
+    //   technologies: ["Next.js", "Solidity", "Hardhat", "Context API", "Dapp"],
+    //   links: [
+    //     {
+    //       type: "Website",
+    //       href: " ",
+    //       icon: <Icons.globe className="size-3" />,
+    //     },
+    //     {
+    //       type: "Source",
+    //       href: "",
+    //       icon: <Icons.github className="size-3" />,
+    //     },
+    //   ],
+    //   image: "",
+    //   video: "https://cdn.magicui.design/bento-grid.mp4",
+    // },
     {
       title: "SaaS ScrapeFlow",
       href: "#",
@@ -288,42 +304,43 @@ export const DATA = {
       image: "",
       video: "https://cdn.magicui.design/bento-grid.mp4",
     },
-    {
-      title: "SAAS Automation Builder",
-      href: "#",
-      dates: "Soon....",
-      active: true,
-      category: ["CloudComputing"],
-      description:
-        "Built a full-stack B2C SaaS automation platform with Google Drive, Slack, Discord, Notion, and Stripe integrations, featuring a drag-and-drop node builder, real-time workflows, credit-based billing, and a polished UI with Aceternity components.",
-      technologies: [
-        "React.js",
-        "TypeScript",
-        "Node.js",
-        "Express.js",
-        "PostgreSQL",
-        "Prisma",
-        "Tailwind CSS",
-        "React Flow",
-        "Stripe API",
-        "OAuth 2.0",
-        "Socket.io",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: " ",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "https://cdn.magicui.design/bento-grid.mp4",
-    },
+
+    // {
+    //   title: "SAAS Automation Builder",
+    //   href: "#",
+    //   dates: "Soon....",
+    //   active: true,
+    //   category: ["CloudComputing"],
+    //   description:
+    //     "Built a full-stack B2C SaaS automation platform with Google Drive, Slack, Discord, Notion, and Stripe integrations, featuring a drag-and-drop node builder, real-time workflows, credit-based billing, and a polished UI with Aceternity components.",
+    //   technologies: [
+    //     "React.js",
+    //     "TypeScript",
+    //     "Node.js",
+    //     "Express.js",
+    //     "PostgreSQL",
+    //     "Prisma",
+    //     "Tailwind CSS",
+    //     "React Flow",
+    //     "Stripe API",
+    //     "OAuth 2.0",
+    //     "Socket.io",
+    //   ],
+    //   links: [
+    //     {
+    //       type: "Website",
+    //       href: " ",
+    //       icon: <Icons.globe className="size-3" />,
+    //     },
+    //     {
+    //       type: "Source",
+    //       href: "",
+    //       icon: <Icons.github className="size-3" />,
+    //     },
+    //   ],
+    //   image: "",
+    //   video: "https://cdn.magicui.design/bento-grid.mp4",
+    // },
     {
       title: "Ultimate CI/CD Corporate DevOps Pipeline",
       href: "#",
