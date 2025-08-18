@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { ChevronRightIcon } from "lucide-react";
 import Link from "next/link";
-
+import { ReactNode } from "react";
 interface ResumeCardProps {
   logoUrl: string;
   altText: string;
@@ -12,7 +12,7 @@ interface ResumeCardProps {
   href?: string;
   badges?: readonly string[];
   period: string;
-  description?: string;
+  description?: ReactNode;
 }
 
 export const ResumeCard = ({

@@ -13,10 +13,21 @@ import { CertificateCard } from "@/components/CertificateCard";
 import Image from "next/image";
 const BLUR_FADE_DELAY = 0.04;
 
+
+export type Project = {
+  title: string;
+  description: string;
+  href?: string;
+  dates?: string;
+  technologies?: string[];
+  image?: string;
+  video?: string;
+  links?: { label: string; url: string }[];
+  category: readonly string[];
+};
 export default function Page() {
   const categories = [
     "All",
-    "Frontend",
     "Backend",
     "Full Stack",
     "Blockchain",
@@ -24,14 +35,13 @@ export default function Page() {
     "DevOps",
   ];
 
-  const [selectedCategory, setSelectedCategory] = useState("All");
-
+  const [selectedCategory, setSelectedCategory] = useState<string>("All");
+  // Filter projects based on selected category
   const filteredProjects =
     selectedCategory === "All"
       ? DATA.projects
-      : DATA.projects.filter(
-          (project) =>
-            project.category && project.category.includes(selectedCategory)
+      : DATA.projects.filter((project) =>
+          (project.category as readonly string[])?.includes(selectedCategory)
         );
 
   return (
@@ -123,7 +133,15 @@ export default function Page() {
                 altText={job.company}
                 title={`${job.title} @ ${job.company}`}
                 period={`${job.start} - ${job.end}`}
-                description={job.description}
+                description={
+                  <p>
+                    Learned and worked on smart contracts using{" "}
+                    <strong>Solidity</strong>, <strong>Web3.js</strong>, and{" "}
+                    <strong>Truffle</strong>. Gained hands-on experience with
+                    real blockchain projects and improved technical and teamwork
+                    skills.
+                  </p>
+                }
               />
             </BlurFade>
           ))}
@@ -248,7 +266,7 @@ export default function Page() {
                     dates={project.dates}
                     tags={project.technologies}
                     image={project.image}
-                    video={project.video}
+                    // video={project.video}
                     links={project.links}
                   />
                 </BlurFade>
@@ -297,7 +315,7 @@ export default function Page() {
 
       {/* Codolio */}
 
-      <section id="contact">
+      <section id="codolio">
         <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 18}>
             <div className="space-y-3">

@@ -18,7 +18,7 @@ export const DATA = {
     "Web3.js",
     "Truffle",
     "Smart Contract",
-    "Hyperledger Fabic",
+    "Hyperledger Fabric",
     "Ethereum",
     "Decentralized Applications",
   ],
@@ -90,17 +90,17 @@ export const DATA = {
       badges: [],
       location: "Remote",
       title: "Blockchain Intern",
-      // logoUrl: "/atomic.png",
+      logoUrl: "/atomic.png",
       start: "Mar 2025",
       end: "May 2025",
-      description: (
-        <p>
-          Learned and worked on smart contracts using <strong>Solidity</strong>,{" "}
-          <strong>Web3.js</strong>, and <strong>Truffle</strong>. Gained
-          hands-on experience with real blockchain projects and improved
-          technical and teamwork skills.
-        </p>
-      ),
+      // description: (
+      //   <p>
+      //     Learned and worked on smart contracts using <strong>Solidity</strong>,{" "}
+      //     <strong>Web3.js</strong>, and <strong>Truffle</strong>. Gained
+      //     hands-on experience with real blockchain projects and improved
+      //     technical and teamwork skills.
+      //   </p>
+      // ),
     },
     // {
     //   company: "Blockchain Intern — Prasunet Pvt. Ltd.",
@@ -203,7 +203,7 @@ export const DATA = {
         },
         {
           type: "Source",
-          href: "",
+          href: " ",
           icon: <Icons.github className="size-3" />,
         },
       ],
@@ -297,7 +297,7 @@ export const DATA = {
         },
         {
           type: "Source",
-          href: "",
+          href: " ",
           icon: <Icons.github className="size-3" />,
         },
       ],
@@ -368,7 +368,7 @@ export const DATA = {
         },
         {
           type: "Source",
-          href: "",
+          href: " ",
           icon: <Icons.github className="size-3" />,
         },
       ],
@@ -376,14 +376,15 @@ export const DATA = {
       video: "https://cdn.magicui.design/bento-grid.mp4",
     },
   ],
+
   // Certificate
   certificates: [
     {
       title: "MERN Stack Web Development",
       provider: "VFX Era",
       date: "Nov 2022 - August 2023",
-      url: "https://drive.google.com/file/d/1XxPd7TgFCk1Bqln14kYZ0Av9RLSAda7b/view?usp=share_link://coursera.org/verify/fullstack123",
-      tags: ["React", "Node.js", "MongoDB", "Express.js"],
+      url: "https://drive.google.com/file/d/1XxPd7TgFCk1Bqln14kYZ0Av9RLSAda7b/view?usp=share_link",
+      tags: ["React", "Node.js", "MongoDB", "Express.js"] as string[],
       image: "/certificates/MERN.jpg",
     },
     {
@@ -391,7 +392,7 @@ export const DATA = {
       provider: "GeeksforGeeks",
       date: "Nov 2024 - May 2025",
       url: "https://drive.google.com/file/d/1rfJNcbv8L21_dswG6Q80L8aREAspm7wN/view?usp=share_link",
-      tags: ["Data Structure and Algorithms", "Java"],
+      tags: ["Data Structure and Algorithms", "Java"] as string[],
       image: "/certificates/GFG-160.png",
     },
   ],
