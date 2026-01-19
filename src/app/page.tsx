@@ -11,37 +11,59 @@ import Link from "next/link";
 import Markdown from "react-markdown";
 import { CertificateCard } from "@/components/CertificateCard";
 import Image from "next/image";
+import { Video } from "lucide-react";
 const BLUR_FADE_DELAY = 0.04;
 
 
-export type Project = {
-  title: string;
-  description: string;
-  href?: string;
-  dates?: string;
-  technologies?: string[];
-  image?: string;
-  video?: string;
-  links?: { label: string; url: string }[];
-  category: readonly string[];
-};
-export default function Page() {
-  const categories = [
-    "All",
-    "Backend",
-    "Full Stack",
-    "Blockchain",
-    "CloudComputing",
-    "DevOps",
-  ];
+// export type Project = {
+//   title: string;
+//   description: string;
+//   href?: string;
+//   dates?: string;
+//   technologies?: string[];
+//   image?: string;
+//   video?: string;
+//   links?: { label: string; url: string }[];
+//   category: string[];
+// };
+// export default function Page() {
+//   const categories = [
+//     "All",
+//     "Backend",
+//     "Full Stack",
+//     "Blockchain",
+//     "CloudComputing",
+//     "DevOps",
+//   ];
 
-  const [selectedCategory, setSelectedCategory] = useState<string>("All");
+//   const [selectedCategory, setSelectedCategory] = useState<string>("All");
+//   // Filter projects based on selected category
+//   const filteredProjects =
+//     selectedCategory === "All"
+//       ? DATA.projects
+//       : DATA.projects.filter((project) =>
+//           [...project.category].includes(selectedCategory)
+//         );
+const categories = [
+  "All",
+  "Backend",
+  "Full Stack",
+  "Blockchain",
+  "CloudComputing",
+  "DevOps",
+] as const;
+
+type Category = (typeof categories)[number]; // "All" | "Backend" | ...
+
+export default function Page() {
+  const [selectedCategory, setSelectedCategory] = useState<Category>("All");
+
   // Filter projects based on selected category
   const filteredProjects =
     selectedCategory === "All"
       ? DATA.projects
-      : DATA.projects.filter((project) =>
-          (project.category as readonly string[])?.includes(selectedCategory)
+      : DATA.projects.filter(
+          (project) => project.category?.includes(selectedCategory) // ✅ now works
         );
 
   return (
@@ -266,7 +288,7 @@ export default function Page() {
                     dates={project.dates}
                     tags={project.technologies}
                     image={project.image}
-                    // video={project.video}
+                    video={project.video}
                     links={project.links}
                   />
                 </BlurFade>
