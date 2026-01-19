@@ -287,8 +287,8 @@ export default function Page() {
                     description={project.description}
                     dates={project.dates}
                     tags={project.technologies}
-                    // image={project.image}
-                    // video={project.video}
+                    image={project.image}
+                    video={project.video}
                     links={project.links}
                   />
                 </BlurFade>
