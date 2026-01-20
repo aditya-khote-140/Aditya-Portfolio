@@ -58,14 +58,12 @@ type Category = (typeof categories)[number]; // "All" | "Backend" | ...
 export default function Page() {
   const [selectedCategory, setSelectedCategory] = useState<Category>("All");
 
-  // Filter projects based on selected category
   const filteredProjects =
     selectedCategory === "All"
       ? DATA.projects
-      : DATA.projects.filter(
-          (project) => project.category?.includes(selectedCategory) // ✅ now works
+      : DATA.projects.filter((project) =>
+          project.category.includes(selectedCategory)
         );
-
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10">
       <section id="hero">
